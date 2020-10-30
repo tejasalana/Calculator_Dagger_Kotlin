@@ -7,9 +7,8 @@ class CalculatorApplication : Application() {
     private lateinit var calculatorComponent : CalculatorComponent
 
     override fun onCreate() {
-        super.onCreate()
         calculatorComponent = DaggerCalculatorComponent.create()
-
+        super.onCreate()
     }
 
     fun getCalculatorComponent() : CalculatorComponent{

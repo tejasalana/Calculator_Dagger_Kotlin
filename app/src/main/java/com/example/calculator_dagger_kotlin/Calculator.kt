@@ -17,7 +17,6 @@ class Calculator {
         this.division = division
     }
 
-
     fun addition(operand1: Float, operand2: Float): Float? {
         return addition.getAddition(operand1, operand2)
     }

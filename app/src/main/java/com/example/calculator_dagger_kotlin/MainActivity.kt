@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var num2 : Float = 0.0f
     private val defaultValue : Float = 0.0f
     private var result : Float = 0.0f
+    private lateinit var calculatorComponent : CalculatorComponent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         //calculator  = Calculator( Addition(), Subtraction(), Multiplication(), Division())
-        val calculatorComponent : CalculatorComponent = (application as CalculatorApplication).getCalculatorComponent()
+        calculatorComponent = (application as CalculatorApplication).getCalculatorComponent()
         calculatorComponent.fieldInject(this)
         //calculator = calculatorComponent.getCalculator()
 
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
                     result = calculator.addition(num1, num2)!!
                     textView.text = "Addition is: $result"
-
+                    textView.text
                 }
                 R.id.subBtn -> {
 

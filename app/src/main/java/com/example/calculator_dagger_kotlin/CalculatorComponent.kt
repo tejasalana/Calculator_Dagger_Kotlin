@@ -7,9 +7,8 @@ import javax.inject.Singleton
 @Singleton
 interface CalculatorComponent {
 
-    fun fieldInject(mainActivity: MainActivity?)
-    fun fieldInject(secondActivity: SecondActivity?)
+    fun fieldInject(mainActivity: MainActivity)
+    fun fieldInject(secondActivity: SecondActivity)
 
-    fun getCalculator() : Calculator
-
+    //fun getCalculator() : Calculator
 }
