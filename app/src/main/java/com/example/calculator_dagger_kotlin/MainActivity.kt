@@ -10,7 +10,8 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    @Inject lateinit var calculator: Calculator
+    @Inject
+    lateinit var calculator: Calculator
     private var num1 : Float = 0.0f
     private var num2 : Float = 0.0f
     private val defaultValue : Float = 0.0f

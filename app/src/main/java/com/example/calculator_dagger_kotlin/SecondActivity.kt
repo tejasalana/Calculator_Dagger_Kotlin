@@ -31,7 +31,7 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
         //calculator  = Calculator( Addition(), Subtraction(), Multiplication(), Division())
         val calculatorComponent : CalculatorComponent = (application as CalculatorApplication).getCalculatorComponent()
         calculatorComponent.fieldInject(this)
-//        calculator = calculatorComponent.getCalculator()
+        //calculator = calculatorComponent.getCalculator()
 
         mulBtn.setOnClickListener(this)
         divBtn.setOnClickListener(this)
